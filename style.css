@@ -1,0 +1,194 @@
+:root {
+  --clr-dark: #000000;
+  --clr-light: #f2f5f5;
+  --clr-primary: #3c3c3c;
+  --clr-accent: #8739f9;
+  --clr-grey: #999999;
+  --clr-backgrond: #d0d0d0;
+}
+
+@font-face {
+  font-family: mainFont;
+  src: url(./antipasto/AntipastoPro-DemiBold_trial.ttf);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-backgrond);
+  font-family: mainFont;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 660px;
+  width: 900px;
+  font-size: 12px;
+}
+
+.header {
+  position: relative;
+  left: 50px;
+  margin: 24px 0px 0px 0px;
+}
+
+.work-area {
+  display: flex;
+  gap: 10px;
+}
+
+.sheet {
+  height: 580px;
+  width: 680px;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
+  height: 580px;
+  width: 200px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.sheet {
+  display: flex;
+  border: 5px solid var(--clr-primary);
+  background-color: var(--clr-light);
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rows {
+  flex: 1;
+}
+
+.rows:hover {
+  background-color: var(--clr-accent) !important;
+  opacity: 50%;
+}
+
+.col-border {
+  border-right: 1px solid var(--clr-grey);
+}
+
+.row-border {
+  border-bottom: 1px solid var(--clr-grey);
+}
+
+.tools-header {
+  margin: 24px 0px 0px 0px;
+}
+.color-options,
+.canvas-options {
+  width: 120px;
+  height: 147px;
+}
+
+.options {
+  position: relative;
+  margin: 24px 8px 12px 0px;
+  left: 8px;
+  accent-color: var(--clr-accent);
+}
+
+.optLabel {
+  position: relative;
+  left: 22px;
+}
+.colorBtn {
+  width: 32px;
+  height: 24px;
+  margin: 16px 12px 0px 0px;
+}
+
+.resetBtn {
+  position: relative;
+  height: 24px;
+  width: 80px;
+  left: 24px;
+  margin: 24px 0px 0px 0px;
+  border-radius: 8px;
+  border: none;
+}
+
+.resetBtn:hover {
+  color: var(--clr-light);
+  background-color: var(--clr-accent);
+}
+
+.slider {
+  margin: 18px 0px 0px 0px;
+  accent-color: var(--clr-accent);
+}
+
+.mySize {
+  position: relative;
+  font-family: monospace;
+  font-weight: 900;
+  left: 45px;
+}
+
+/* Media Query Breakpoints*/
+@media (max-width: 900px) {
+  .header {
+    margin: 0px 0px 12px 0px;
+  }
+  .container {
+    height: auto;
+    width: 450px;
+    font-size: 11px;
+  }
+
+  .tools {
+    height: auto;
+    width: 150px;
+  }
+
+  .sheet {
+    height: auto;
+    width: 300px;
+  }
+
+  .options {
+    position: relative;
+    margin: 16px 8px 0px 0px;
+  }
+
+  .tools-header {
+    margin: 16px 0px 0px 0px;
+  }
+
+  .resetBtn {
+    position: relative;
+    left: 35px;
+    height: 18px;
+    width: 50px;
+    margin: 12px 0px 0px 0px;
+    font-size: 9px;
+  }
+
+  .slider {
+    margin: 8px 0px 0px 0px;
+  }
+}

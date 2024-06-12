@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="header">Etch-A-Sketch</h1>
+    <div class="container">
+      <div class="work-area">
+        <div class="tools">
+          <h3 class="tools-header">Color Options</h3>
+          <div class="color-options">
+            <input type="color" id="option1" name="options" class="colorBtn" />
+            <label for="custom">Custom Color</label><br />
+            <input
+              type="radio"
+              id="option2"
+              name="options"
+              value="rainbow"
+              class="options"
+            />
+            <label for="rainbow" class="optLabel">Rainbow</label><br />
+            <input
+              type="radio"
+              id="option3"
+              name="options"
+              value="eraser"
+              class="options"
+            />
+            <label for="eraser" class="optLabel">Eraser</label>
+          </div>
+          <h3 class="tools-header">Canvas Options</h3>
+          <div class="canvas-options">
+            <input
+              type="checkbox"
+              id="enablegrid"
+              name="grid"
+              checked="true"
+              class="options"
+            />
+            <label for="enablegrid" class="optLabel">Enable Grid</label>
+            <input
+              type="color"
+              id="canvas-bgclr"
+              class="colorBtn"
+              value="#F2F5F5"
+            />
+            <label for="canvas-bgclr">Canvas Color</label>
+            <input type="button" value="Reset" class="resetBtn" id="resetBtn" />
+            <input
+              type="range"
+              id="gridSize"
+              name="gridSize"
+              min="8"
+              max="96"
+              step="8"
+              value="8"
+              class="slider"
+              list="sizes"
+            />
+            <label for="gridSize" class="mySize">8 by 8</label>
+          </div>
+        </div>
+        <div class="sheet"></div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
